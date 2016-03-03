@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -48,6 +48,11 @@
       .jumbotron .container h1{
         color: red;
       }
+      .container .jumbotron .row img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
@@ -91,17 +96,32 @@
         <h1 class="text-center">Fitness Badges</h1>
       </div>
     </div>
-    <div class="container">
-      <div class="jumbotron">
-        <table>
-          <tr><img src="https://pixabay.com/static/uploads/photo/2015/10/31/12/39/power-sports-1015688_960_720.jpg"></tr>
-          <tr><img src="https://pixabay.com/static/uploads/photo/2015/10/30/10/47/sport-1013747_960_720.jpg"></tr>
-          <tr><img src="https://pixabay.com/static/uploads/photo/2015/10/31/12/37/dog-1015660_960_720.jpg"></tr>
-          <tr><img src="https://pixabay.com/static/uploads/photo/2015/10/30/10/45/sport-1013718_960_720.jpg"></tr>
-          <tr><img src="https://pixabay.com/static/uploads/photo/2015/10/30/10/40/sport-1013660_960_720.jpg"></tr>
-        </table>
+        <div class="container">
+          <div class="jumbotron"
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <img src="https://pixabay.com/static/uploads/photo/2015/10/31/12/39/power-sports-1015688_960_720.jpg">
+          <h2>Weight Lifting</h2>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <img src="https://pixabay.com/static/uploads/photo/2015/10/30/10/47/sport-1013747_960_720.jpg">
+          <h2>Dumbells</h2>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <img src="https://pixabay.com/static/uploads/photo/2015/10/31/12/37/dog-1015660_960_720.jpg">
+          <h2>Walking</h2>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <img src="https://pixabay.com/static/uploads/photo/2015/10/30/10/45/sport-1013718_960_720.jpg">
+          <h2>Pull Ups</h2>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        </div>
       </div>
-    </div>
 
 
 
