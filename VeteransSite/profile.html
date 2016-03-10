@@ -5,109 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Profile Page Veterans I.E.D</title>
+    <title>Testimonials Veterans I.E.D</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- jQuery Plug in-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- script for pop up modal -->
-    <script type="text/javascript" src="profile.js"></script>
     <style>
       body{
           background-color: #16818E;
       }
-      .profileImage {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
+      /* Changing profile img to be a circle */
+      .jumbotron img{
+        height:100px;
+        width: 100px;
+        border-radius: 50%
       }
-      /* Changing hr color*/
-      .profilejumbotron>hr{
-        border-top-color: grey;
-        }
-        hr{
-        border-top: 10px solid;
-        }
-body,
-html {
-  min-height: 100%;
-}
-/*
-body{
-  background-image: url("https://media.giphy.com/media/by7uJ8IGaeDmw/giphy.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
-
-/* Outer */
-.popup {
-    width:100%;
-    height:100%;
-    display:none;
-    position:fixed;
-    top:0px;
-    left:0px;
-    background:rgba(0,0,0,0.75);
-}
- 
-/* Inner */
-.popup-inner {
-    max-width:700px;
-    width:90%;
-    padding:40px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
-    background:#fff;
-}
- 
-/* Close Button */
-.popup-close {
-    width:30px;
-    height:30px;
-    padding-top:4px;
-    display:inline-block;
-    position:absolute;
-    top:0px;
-    right:0px;
-    transition:ease 0.25s all;
-    -webkit-transform:translate(50%, -50%);
-    transform:translate(50%, -50%);
-    border-radius:1000px;
-    background:rgba(0,0,0,0.8);
-    font-family:Arial, Sans-Serif;
-    font-size:20px;
-    text-align:center;
-    line-height:100%;
-    color:#fff;
-}
- 
-.popup-close:hover {
-    -webkit-transform:translate(50%, -50%) rotate(180deg);
-    transform:translate(50%, -50%) rotate(180deg);
-    background:rgba(0,0,0,1);
-    text-decoration:none;
-}
-
-.popup img{
-  height: 100px;
-  width: 100px;
-
-}
+      /* Making testimonial have space between other Testimonial's */
+      .jumbotron{
+        margin: 10px 0px;
+      }
+      /* Making a scroller that only appears when the testimonial is long */
+      .scroller{
+        background-color: #CCCCCC;;
+        color: black;
+        height: 500px;
+        width: 100%;
+        overflow: scroll;
+        padding: 3px;
+      }
+      /* Giving testimonial text padding to fit in container */
+      .scroller p{
+        padding-left: 3px;
+        padding-right: 20px;
+      }
+      /* Giving Testimonial title space to fit in container */
+      .scroller h1{
+        padding-left: 3px;
+        padding-right: 20px;
+      }
     </style>
   </head>
   <body>
-    <!-- NAVBAR -->
+    
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -122,9 +62,9 @@ body{
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
-            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li class="active"><a href="Testimonials.html">Testimonials</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" CLASS="active">Badges<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Badges<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li class="dropdown-header">All Badges</li>
               <li><a href="fitness.html">Fitness</a></li>
@@ -135,7 +75,7 @@ body{
               <li><a href="#">Example 2</a></li>
             </ul>
             </li>
-            <li class="active"><a href="profile.html">Profile</a></li>
+            <li><a href="profile.html">Profile</a></li>
           </ul>
         </div><!-- .navbar-collapse -->
       </div>
@@ -143,74 +83,52 @@ body{
     <br>
     <br>
     <div class="container">
-      <div class="jumbotron profilejumbotron">
-        <!-- User Image -->
-        <img class="profileImage" src="https://pixabay.com/static/uploads/photo/2015/08/29/16/33/soldier-913184_960_720.jpg">
-        <!-- User name -->
-        <h1> Jessica Parker </h1>
-        <hr>
-              <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <!-- First badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2013/07/18/10/56/dog-163527_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
-          <!-- First badge Header -->
-          <h2>War Dog Badge</h2>
-          <!-- First badge Description -->
-          <p>Ever hear of a war dog helping Veterans</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <!-- Second badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2013/07/13/12/35/boxing-gloves-159920_960_720.png" alt="Generic placeholder image" width="150" height="150">
-          <!-- Second badge Header -->
-          <h2>The Boxer Badge</h2>
-          <!-- Second badge Description -->
-          <p>This incredible Boxer helped his ptsd with boxing</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <!-- Third badge image -->
-          <img class="img-circle" src="http://floatationtanks.com/wp-content/uploads/float_pods/dream-pod-float-tank.jpg" alt="Generic placeholder image" width="150" height="150">
-          <!-- Third badge Header -->
-          <h2>Float Therapy Badge</h2>
-          <!-- Third badge Description -->
-          <p>See how float therapy helped</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <!-- Fourth badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/07/12/01/31/sunset-841539_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
-          <!-- Fourth badge Header -->
-          <h2>Fishing Badge</h2>
-          <!-- Fourth badge Description -->
-          <p>See how these men went together to overcome ptsd</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
-
-      </div><!-- /.row -->
-      </div>
-    </div>
-    <!-- Testing badges pop upppppppppp -->
-    <a class="btn" data-popup-open="popup-1" href="index.html">Open Popup #1</a>
-    <div class="popup" data-popup="popup-1">
-        <div class="popup-inner">
-            <h2>Wow! This is Awesome! (Popup #1)</h2>
-            <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
-            <img src="https://pixabay.com/static/uploads/photo/2013/07/13/12/35/boxing-gloves-159920_960_720.png"/>
-            <p><a data-popup-close="popup-1" href="#">Close</a></p>
-            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <!-- USER PROFILE picture -->
+            <img src="https://pixabay.com/static/uploads/photo/2015/08/29/16/33/soldier-913184_960_720.jpg">
+          </div>
+          <div class="col-10 col-sm-12">
+            <!-- USER NAME -->
+            <p> Jessica</p>
+          </div>
         </div>
+        <div class="scroller">
+          <!-- USER Testimonial TITAL -->
+          <h1>My story</h1>
+          <!-- USER TESTIMONIAL -->
+          <p> 
+            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+          </p>
+        </div>
+      </div>
+
     </div>
-    
+        <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <!-- USER PROFILE picture -->
+            <img src="https://pixabay.com/static/uploads/photo/2015/08/29/16/33/soldier-913184_960_720.jpg">
+          </div>
+          <div class="col-10 col-sm-12">
+            <!-- USER NAME -->
+            <p> Jessica</p>
+          </div>
+        </div>
+        <div class="scroller">
+          <!-- USER Testimonial TITAL -->
+          <h1>My story</h1>
+          <!-- USER TESTIMONIAL -->
+          <p> 
+            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+          </p>
+        </div>
+      </div>
 
 
 
-
-
-    <!-- FOOTER -->
     <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       <div class="container">
         <div class="navbar-text pull-left">
@@ -223,5 +141,10 @@ body{
         </div>
       </div>
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
