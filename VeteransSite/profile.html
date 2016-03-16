@@ -37,13 +37,7 @@ body,
 html {
   min-height: 100%;
 }
-/*
-body{
-  background-image: url("https://media.giphy.com/media/by7uJ8IGaeDmw/giphy.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
+
 
 /* Outer */
 .popup {
@@ -100,8 +94,8 @@ body{
 }
 
 .popup img{
-  height: 100px;
-  width: 100px;
+  height: 400px;
+  width: 400px;
 
 }
     </style>
@@ -117,29 +111,20 @@ body{
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Veterans I.E.D</a>
+          <a class="navbar-brand" href="indexLoggedIn.html">Veterans I.E.D</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="indexLoggedIn.html">Home</a></li>
             <li><a href="Testimonials.html">Testimonials</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" CLASS="active">Badges<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">All Badges</li>
-              <li><a href="fitness.html">Fitness</a></li>
-              <li><a href="#">Educational</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Other Badges</li>
-              <li><a href="#">Example 1</a></li>
-              <li><a href="#">Example 2</a></li>
-            </ul>
-            </li>
             <li class="active"><a href="profile.html">Profile</a></li>
           </ul>
         </div><!-- .navbar-collapse -->
       </div>
-    </div>
+    </div><!-- Navbar -->
+
+
+
     <br>
     <br>
     <div class="container">
@@ -147,28 +132,30 @@ body{
         <!-- User Image -->
         <img class="profileImage" src="https://pixabay.com/static/uploads/photo/2015/08/29/16/33/soldier-913184_960_720.jpg">
         <!-- User name -->
-        <h1> Jessica Parker </h1>
+        <h2> Jessica Parker </h2>
+        <h1>Badges Completed</h1>
         <hr>
               <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- First badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2013/07/18/10/56/dog-163527_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
+          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
           <!-- First badge Header -->
           <h2>War Dog Badge</h2>
           <!-- First badge Description -->
           <p>Ever hear of a war dog helping Veterans</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
+<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#firstBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+        </div><!-- First Badge -->
 
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Second badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2013/07/13/12/35/boxing-gloves-159920_960_720.png" alt="Generic placeholder image" width="150" height="150">
+          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/05/02/11/53/henry-maske-749857_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
           <!-- Second badge Header -->
           <h2>The Boxer Badge</h2>
           <!-- Second badge Description -->
           <p>This incredible Boxer helped his ptsd with boxing</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#secondBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+        </div><!-- Second badge -->
 
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Third badge image -->
@@ -177,8 +164,8 @@ body{
           <h2>Float Therapy Badge</h2>
           <!-- Third badge Description -->
           <p>See how float therapy helped</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#thirdBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+        </div><!-- Third Badge -->
 
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Fourth badge Image -->
@@ -187,24 +174,175 @@ body{
           <h2>Fishing Badge</h2>
           <!-- Fourth badge Description -->
           <p>See how these men went together to overcome ptsd</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-md-3 -->
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#fourthBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+        </div><!-- Fourth Badge -->
 
       </div><!-- /.row -->
+      <!-- Badges in progress -->
+          <hr>
+            <h1>Badges in progress</h1>
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <!-- sixth badge Image -->
+                  <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/02/17/15/35/flying-639522_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <!-- sixth badge Header -->
+                  <h2>Team work Badge</h2>
+                  <!-- sixth badge Description -->
+                  <p>Complete a badge with another Veteran</p>
+        <!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#fifthBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+                </div><!-- First Badge -->
+              </div><!-- /.row -->
       </div>
     </div>
-    <!-- Testing badges pop upppppppppp -->
-    <a class="btn" data-popup-open="popup-1" href="index.html">Open Popup #1</a>
-    <div class="popup" data-popup="popup-1">
-        <div class="popup-inner">
-            <h2>Wow! This is Awesome! (Popup #1)</h2>
-            <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
-            <img src="https://pixabay.com/static/uploads/photo/2013/07/13/12/35/boxing-gloves-159920_960_720.png"/>
-            <p><a data-popup-close="popup-1" href="#">Close</a></p>
-            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+
+    <!-- Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups  -->
+
+
+    <!-- First Badge pop up -->
+     <div class="container heading">
+
+
+        <!-- Popup First Badge -->
+        <div class="modal fade" id="firstBadge">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">War dog</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" class="img-responsive" alt="Cinque Terre">
+                  <!-- Testimonial -->
+                  <p>            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+                  </p>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="Complete challenge">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
         </div>
-    </div>
-    
+
+      </div> <!-- First Badge popup -->
+
+    <!-- Second Badge pop up -->
+     <div class="container heading">
+
+
+        <!-- Popup Second Badge -->
+        <div class="modal fade" id="secondBadge">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">The Boxer</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="https://pixabay.com/static/uploads/photo/2015/05/02/11/53/henry-maske-749857_960_720.jpg" class="img-responsive" alt="Cinque Terre">
+                  <!-- Testimonial -->
+                  <p>            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+                  </p>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="Complete challenge">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- Second Badge popup -->
+
+    <!-- Third Badge pop up -->
+     <div class="container heading">
+
+
+        <!-- Popup Third Badge -->
+        <div class="modal fade" id="thirdBadge">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">The float therapy Badge</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="http://floatationtanks.com/wp-content/uploads/float_pods/dream-pod-float-tank.jpg" class="img-responsive" alt="Cinque Terre">
+                  <!-- Testimonial -->
+                  <p>            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+                  </p>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="Complete challenge">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- third Badge popup -->
+
+      <!-- fourth Badge popup -->
+      <div class="container heading">
+        <div class="modal fade" id="fourthBadge">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">The Fishing Badge</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="https://pixabay.com/static/uploads/photo/2015/07/12/01/31/sunset-841539_960_720.jpg" alt="Generic placeholder image" class="img-responsive" alt="Cinque Terre">
+                  <!-- Testimonial -->
+                  <p>            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+                  </p>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="Complete challenge">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- fourth Badge popup -->
 
 
 
