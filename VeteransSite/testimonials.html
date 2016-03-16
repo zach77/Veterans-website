@@ -57,24 +57,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Veterans I.E.D</a>
+          <a class="navbar-brand" href="indexLoggedIn.html">Veterans I.E.D</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="indexLoggedIn.html">Home</a></li>
             <li class="active"><a href="Testimonials.html">Testimonials</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Badges<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">All Badges</li>
-              <li><a href="fitness.html">Fitness</a></li>
-              <li><a href="#">Educational</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Other Badges</li>
-              <li><a href="#">Example 1</a></li>
-              <li><a href="#">Example 2</a></li>
-            </ul>
-            </li>
             <li><a href="profile.html">Profile</a></li>
           </ul>
         </div><!-- .navbar-collapse -->
@@ -82,6 +70,46 @@
     </div>
     <br>
     <br>
+     <div class="container heading">
+        <div class="jumbotron">
+        <!-- Log in Button -->
+        <h1>post a Testimonial</h1><button type="button" class="btn-primary" data-toggle="modal" data-target="#loginform"><i class="fa fa-plus-square-o fa-lg"></i></button>
+        <!-- Popup Log in Form -->
+        <div class="modal fade" id="loginform">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Form header -->
+              <div class="modal-header">
+                <!-- Log in Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <h4 class="modal-title">Post a Testimonial</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Testimonial Title -->
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Title:</label>
+                    <div class="col-md-5">
+                      <input type="text" class="form-control input-sm">
+                    </div>
+                  </div>
+                  <!-- Testimoinal -->
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="comment" class="col-md-offset-1">Testimonial:</label>
+                      <textarea class="form-control" rows="5" id="Testimonial"></textarea>
+                    </div>
+                  </form>
+                  <a href="index.html"><input type="submit" class="btn btn-success" value="submit"></a>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- TESTIMONIALS -->
     <div class="container">
       <div class="jumbotron">
         <div class="row">
@@ -105,16 +133,17 @@
       </div>
 
     </div>
-        <div class="container">
+    <!-- TESTIMONIALS -->
+    <div class="container">
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-2 col-sm-12">
             <!-- USER PROFILE picture -->
-            <img src="https://pixabay.com/static/uploads/photo/2015/08/29/16/33/soldier-913184_960_720.jpg">
+            <img src="https://pixabay.com/static/uploads/photo/2015/09/02/03/56/soldier-917947_960_720.jpg">
           </div>
           <div class="col-10 col-sm-12">
             <!-- USER NAME -->
-            <p> Jessica</p>
+            <p> Laura esponza</p>
           </div>
         </div>
         <div class="scroller">
@@ -126,6 +155,9 @@
           </p>
         </div>
       </div>
+
+    </div>
+
 
 
 
