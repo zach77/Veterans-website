@@ -12,7 +12,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -20,20 +24,30 @@ body {
   line-height: 40px;
 }
 
-/* Main marketing message and sign up button centering */
+/* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
-  /*Making the Jumbotron  border Transparent*/
 
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
 .jumbotron h1{
 	color: black;
 }
 .jumbotron p{
 	color: black;
 }
-/* making navbar Transparent */
-.navbar-default {
-    border: 0px;
-    color: black;
+
+.signIn strong{
+  color: green;
+  font-family: arial, sans-serif;
+  font-size: 30px;
 }
