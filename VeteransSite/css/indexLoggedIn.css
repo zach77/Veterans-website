@@ -1,0 +1,39 @@
+/* Space out content a bit */
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.full {
+  background: url(https://pixabay.com/static/uploads/photo/2014/12/16/06/58/sailor-570017_960_720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Main marketing message and sign up button centering */
+.jumbotron {
+  text-align: center;
+}
+  /*Making the Jumbotron  border Transparent*/
+
+.jumbotron h1{
+	color: black;
+}
+.jumbotron p{
+	color: black;
+}
+/* making navbar Transparent */
+.navbar-default {
+    border: 0px;
+    color: black;
+}
