@@ -1,63 +1,168 @@
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
+<!DOCTYPE html>
+<html class="full" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home Page Veterans I.E.D</title>
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link href="css/index.css"rel="stylesheet">
+        <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body id="background">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Veterans I.E.D</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div><!-- .navbar-collapse -->
+      </div>
+    </div>
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-.jumbotron {
-    position: relative;
-    background: #000 url("https://pixabay.com/static/uploads/photo/2014/12/16/06/58/sailor-570017_960_720.jpg") center center;
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    overflow: hidden;
-}
-.jumbotron h1{
-	color: black;
-}
-.jumbotron p{
-	color: black;
-}
+      <div class="container heading">
+        <div class="jumbotron jumbotronOpacity">
+        <h1>VETERANS I.E.D.</h1>
+        <p class="lead">A tool that empowers warriors to proactively track their own wellness through self-accountability and positively impacting other veterans.</p>
+        <!-- Sign up button -->
+        <button type="button" class="btn-primary" data-toggle="modal" data-target="#signupform">Sign Up</button>
+
+        <!-- Log in Button -->
+        <button type="button" class="btn-primary" data-toggle="modal" data-target="#loginform">Log In</button>
+        <!-- Popup Sign Up Form -->
+        <div class="modal fade" id="signupform">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Form header -->
+              <div class="modal-header">
+                <!-- Sign up button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <h4 class="modal-title">Sign Up</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">First Name:</label>
+                    <div class="col-md-5">
+                      <input type="text" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Last Name:</label>
+                    <div class="col-md-5">
+                      <input type="text" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Email:</label>
+                    <div class="col-md-5">
+                      <input type="email" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Password:</label>
+                    <div class="col-md-5">
+                      <input type="password" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Confirm password:</label>
+                    <div class="col-md-5">
+                      <input type="password" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Popup Log in Form -->
+        <div class="modal fade" id="loginform">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Form header -->
+              <div class="modal-header">
+                <!-- Log in Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <h4 class="modal-title">Log In</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Email:</label>
+                    <div class="col-md-5">
+                      <input type="email" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 col-md-offset-1">Password:</label>
+                    <div class="col-md-5">
+                      <input type="password" class="form-control input-sm">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    <!-- Footer -->
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+            <p> 2016 Veteran I.E.D.</p>
+        </div>
+        <div class="navbar-text pull-right">
+          <a href="#"<i class="fa fa-facebook-square fa-2x" style="color:#9d9d9d"></i></a>
+          <a href="#"<i class="fa fa-twitter fa-2x" style="color:#9d9d9d"></i></a>
+          <a href="#"<i class="fa fa-google-plus fa-2x" style="color:#9d9d9d"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
