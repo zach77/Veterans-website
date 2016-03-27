@@ -12,10 +12,11 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+        <!-- custom css -->
+    <link href="css/profile.css"rel="stylesheet">
     <!-- jQuery Plug in-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <!-- custom css -->
-    <link href="css/profile.css"rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
     <!-- script for pop up modal -->
     <script type="text/javascript" src="js/profile.js"></script>
@@ -45,8 +46,11 @@
 
 
 
-    <br>
-    <br>
+    <div class="blankSpace">
+    </div>
+    <div class="blankSpace">
+    </div>
+
     <div class="container">
       <div class="jumbotron profilejumbotron">
         <!-- User Image -->
@@ -63,10 +67,9 @@
           <h2>War Dog Badge</h2>
           <!-- First badge Description -->
           <p>Ever hear of a war dog helping Veterans</p>
-<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#firstBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warDog"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
         </div><!-- First Badge -->
-
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Second badge Image -->
           <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/05/02/11/53/henry-maske-749857_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
@@ -74,9 +77,9 @@
           <h2>The Boxer Badge</h2>
           <!-- Second badge Description -->
           <p>This incredible Boxer helped his ptsd with boxing</p>
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#secondBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#boxer"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
         </div><!-- Second badge -->
-
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Third badge image -->
           <img class="img-circle" src="http://floatationtanks.com/wp-content/uploads/float_pods/dream-pod-float-tank.jpg" alt="Generic placeholder image" width="150" height="150">
@@ -84,9 +87,9 @@
           <h2>Float Therapy Badge</h2>
           <!-- Third badge Description -->
           <p>See how float therapy helped</p>
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#thirdBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#floatTherapy"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
         </div><!-- Third Badge -->
-
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Fourth badge Image -->
           <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/07/12/01/31/sunset-841539_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
@@ -94,37 +97,37 @@
           <h2>Fishing Badge</h2>
           <!-- Fourth badge Description -->
           <p>See how these men went together to overcome ptsd</p>
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#fourthBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#fishing"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
         </div><!-- Fourth Badge -->
 
       </div><!-- /.row -->
+      <hr>
       <!-- Badges in progress -->
-          <hr>
             <h1>Badges in progress</h1>
               <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                  <!-- sixth badge Image -->
+                  <!-- fifth badge Image -->
                   <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/02/17/15/35/flying-639522_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
-                  <!-- sixth badge Header -->
+                  <!-- fifth badge Header -->
                   <h2>Team work Badge</h2>
-                  <!-- sixth badge Description -->
+                  <!-- fifth badge Description -->
                   <p>Complete a badge with another Veteran</p>
-        <!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#fifthBadge"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
-                </div><!-- First Badge -->
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#teamWork"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+                </div><!-- fifth badge -->
               </div><!-- /.row -->
       </div>
     </div>
 
     <!-- Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups Badge pop ups  -->
-
+     <div class="blankSpace">
+     </div>
 
     <!-- First Badge pop up -->
      <div class="container heading">
 
 
         <!-- Popup First Badge -->
-        <div class="modal fade" id="firstBadge">
+        <div class="modal fade" id="warDog">
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- popup  Header -->
@@ -161,7 +164,7 @@
 
 
         <!-- Popup Second Badge -->
-        <div class="modal fade" id="secondBadge">
+        <div class="modal fade" id="boxer">
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- popup  Header -->
@@ -198,7 +201,7 @@
 
 
         <!-- Popup Third Badge -->
-        <div class="modal fade" id="thirdBadge">
+        <div class="modal fade" id="floatTherapy">
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- popup  Header -->
@@ -232,7 +235,7 @@
 
       <!-- fourth Badge popup -->
       <div class="container heading">
-        <div class="modal fade" id="fourthBadge">
+        <div class="modal fade" id="fishing">
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- popup  Header -->
@@ -263,6 +266,40 @@
         </div>
 
       </div> <!-- fourth Badge popup -->
+
+      <!-- fifth Badge popup -->
+      <div class="container heading">
+        <div class="modal fade" id="teamWork">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">Team Work Badge</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="https://pixabay.com/static/uploads/photo/2015/02/17/15/35/flying-639522_960_720.jpg" alt="Generic placeholder image" class="img-responsive" alt="Cinque Terre">
+                  <!-- Testimonial -->
+                  <p>            Rice Flour Tortilla Asadero Steamed Beans Jalapenos Cheddar Refried Beans Monterey Jack Whole Wheat Tortilla Feta Monterey Jack Taco Seasoning Guacamole Cod Shell Cilantro Mozzarella Red Pepper Taco Sauce Steak Ranchero Corn Red Pepper Guacamole Taco Sauce Rice Hamburger Cod Ranchero Queso Fresco Guacamole Chicken Cheddar Shell American Cheese Turkey Sour Cream Taco Seasoning Ricotta Salata Pico De Gallo Cilantro Taco Seasoning Chicken Lettuce Sour Cream Taco Sauce Mozzarella Queso Blanco Steamed Beans Mozzarella Sour Cream Taco Sauce Tomato Mozzarella Sour Cream Cheddar Lime Juice American Cheese Steak Guacamole Corn Lime Juice Sour Cream Pork Pico De Gallo Bacon Jalapenos American Cheese Ricotta Salata Corn Tortilla Taco Seasoning Black Beans Onions Lemon Juice Taco Seasoning Cheddar Taco Seasoning Mozzarella Lemon Juice Refried Beans Rice Black Beans Cheddar Whole Wheat Tortilla Cilantro Asadero Mozzarella Sour Cream Lime Juice Steamed Beans Lemon Juice Cheddar Ranchero Steamed Beans Corn Bacon Queso Blanco Corn Tortilla Jalapenos Hamburger Queso Fresco Mozzarella Steak Turkey Turkey Turkey Ranchero Cheddar Cheddar Pinto Beans Whole Wheat Tortilla Steamed Beans Queso Fresco Steak Corn Queso Fresco Steamed Beans Queso Fresco American Cheese Steamed Beans Whole Wheat Tortilla Black Beans Steak Pork Ricotta Salata Hamburger Rice Taco Shell Cilantro Mozzarella Lettuce Onions Whole Wheat Tortilla Hamburger Turkey Lime Juice Queso Fresco Queso Fresco Monterey Jack Steak Ricotta Salata Taco Seasoning Shell Bacon
+                  </p>
+
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <input type="submit" class="btn btn-success" value="Complete challenge">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- fifth Badge popup -->
 
 
 
