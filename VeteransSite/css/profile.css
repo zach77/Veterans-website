@@ -2,23 +2,40 @@ body{
   background-color: #16818E;
 }
 .profileImage {
-height: 200px;
-width: 200px;
-border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+#badge{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    margin-top: 15px;
 }
 /* Changing hr color*/
 .profilejumbotron>hr{
 border-top-color: grey;
 }
+
+ /* making jumbotron opacity */
+ .profilejumbotron{
+    background-color: rgba(255, 255, 255, 0.8); /* backup color */
+    background-color: rgba(255, 255, 255, 0.8);
+ }
+
 hr{
-border-top: 10px solid;
+border-top: 10px solid grey;
 }
+
 body,
 html {
   min-height: 100%;
 }
 
-
+ /* pop ups ------------------------------------------------------------------------------ */
 /* Outer */
 .popup {
     width:100%;
@@ -78,6 +95,8 @@ html {
   width: 400px;
 
 }
+
+ /* pop ups end ------------------------------------------------------------------------------ */
 
 /* adding space above navbar */
 .blankSpace{
