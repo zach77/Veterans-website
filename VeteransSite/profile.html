@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  class="full" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,22 +57,56 @@
         <img class="profileImage" src="https://pixabay.com/static/uploads/photo/2015/08/29/16/33/soldier-913184_960_720.jpg">
         <!-- User name -->
         <h2> Jessica Parker </h2>
+      <!-- Badges Completed >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <h1>Badges Completed</h1>
-        <hr>
+          <div class="badgeCompleted">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <!-- First badge Image -->
+                <img id="badge" src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" alt="Generic placeholder image">
+                <!-- First badge Header -->
+                <h2>War Dog Badge</h2>
+                <!-- First badge Description -->
+                <p>Ever hear of a war dog helping Veterans</p>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warDogCompleted"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+              </div><!-- First Badge -->
+            </div>
+          </div>
+      <hr>
+      <!-- Badges in progress >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+            <h1>Badges in progress</h1>
+            <div class="badgeProgress">
               <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <!-- First badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
-          <!-- First badge Header -->
-          <h2>War Dog Badge</h2>
-          <!-- First badge Description -->
-          <p>Ever hear of a war dog helping Veterans</p>
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warDog"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
-        </div><!-- First Badge -->
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <!-- First badge Image -->
+                  <img id="badge" src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" alt="Generic placeholder image">
+                  <!-- First badge Header -->
+                  <h2>War Dog Badge</h2>
+                  <!-- First badge Description -->
+                  <p>Ever hear of a war dog helping Veterans</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warDogAccepted"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+                </div><!-- First Badge -->
+              </div>
+            </div>
+            <hr>
+      <!-- All Badges >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+            <h1> All Badges </h1>
+              <div class="row">
+                <div class="badgeAll">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <!-- First badge Image -->
+                    <img id="badge" src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" alt="Generic placeholder image" id="badge">
+                    <!-- First badge Header -->
+                    <h2>War Dog Badge</h2>
+                    <!-- First badge Description -->
+                    <p>Ever hear of a war dog helping Veterans</p>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#warDog"><i class="fa fa-plus-square-o fa-lg">View details</i></button>
+                  </div><!-- First Badge -->
+                </div>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Second badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/05/02/11/53/henry-maske-749857_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
+          <img id="badge" src="https://pixabay.com/static/uploads/photo/2015/05/02/11/53/henry-maske-749857_960_720.jpg" alt="Generic placeholder image">
           <!-- Second badge Header -->
           <h2>The Boxer Badge</h2>
           <!-- Second badge Description -->
@@ -82,7 +116,7 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Third badge image -->
-          <img class="img-circle" src="http://floatationtanks.com/wp-content/uploads/float_pods/dream-pod-float-tank.jpg" alt="Generic placeholder image" width="150" height="150">
+          <img id="badge" src="http://floatationtanks.com/wp-content/uploads/float_pods/dream-pod-float-tank.jpg" alt="Generic placeholder image">
           <!-- Third badge Header -->
           <h2>Float Therapy Badge</h2>
           <!-- Third badge Description -->
@@ -92,7 +126,7 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <!-- Fourth badge Image -->
-          <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/07/12/01/31/sunset-841539_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
+          <img id="badge" src="https://pixabay.com/static/uploads/photo/2015/07/12/01/31/sunset-841539_960_720.jpg" alt="Generic placeholder image">
           <!-- Fourth badge Header -->
           <h2>Fishing Badge</h2>
           <!-- Fourth badge Description -->
@@ -101,13 +135,11 @@
         </div><!-- Fourth Badge -->
 
       </div><!-- /.row -->
-      <hr>
-      <!-- Badges in progress -->
-            <h1>Badges in progress</h1>
+
               <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                   <!-- fifth badge Image -->
-                  <img class="img-circle" src="https://pixabay.com/static/uploads/photo/2015/02/17/15/35/flying-639522_960_720.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <img id="badge" src="https://pixabay.com/static/uploads/photo/2015/02/17/15/35/flying-639522_960_720.jpg" alt="Generic placeholder image">
                   <!-- fifth badge Header -->
                   <h2>Team work Badge</h2>
                   <!-- fifth badge Description -->
@@ -146,9 +178,11 @@
                   </p>
 
                   <div class="form-group">
-                    <div class="col-md-2 col-md-offset-8">
-                      <input type="submit" class="btn btn-success" value="Complete challenge">
-                    </div>
+                    <div class="accepted">
+                      <div class="col-md-2 col-md-offset-8">
+                        <input type="sub" class="btn btn-success" value="Accept Badge">
+                      </div>
+                  </div>
                   </div>
                 </form>
               </div>
@@ -302,6 +336,79 @@
       </div> <!-- fifth Badge popup -->
 
 
+      <!-- accepted pop up            -->
+        <!-- Popup First Badge -->
+        <div class="modal fade" id="warDogAccepted">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">War dog</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" class="img-responsive" alt="Cinque Terre">
+                    <!-- steps to complete -->
+                    <h1>To complete the War dog Badge please follow these steps </h1>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value=""><h3>1. Call a local dog shelter to see where to get a war dog</h3></label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value=""><h3>2. Set a appointment to meet the war dog</h3></label>
+                    </div>
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <div class="completed">
+                        <input type="sub" class="btn btn-success" value="Complete challenge">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- completed pop up            -->
+        <!-- Popup First Badge -->
+        <div class="modal fade" id="warDogCompleted">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- popup  Header -->
+              <div class="modal-header">
+                <!-- EXIT Button -->
+                <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                <!-- badge Title -->
+                <h4 class="modal-title">War dog</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <!-- Badge Image -->
+                  <img src="https://pixabay.com/static/uploads/photo/2013/02/21/19/01/dog-84438_960_720.jpg" class="img-responsive" alt="Cinque Terre">
+                    <!-- steps to complete -->
+                    <h1> Congrats on completing the War Dog Badge</h1>
+                    <h1>It's what you do know that matters when you are ready feel free to post a testimonial on how this badge Inspired you....</h1>
+                  <div class="form-group">
+                    <div class="col-md-2 col-md-offset-8">
+                      <div class="completed">
+                        <a href="testimonials.html"><input type="sub" class="btn btn-success" value="Share your sucess"></a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
+
 
 
 
@@ -310,11 +417,6 @@
       <div class="container">
         <div class="navbar-text pull-left">
             <p> 2016 Veteran I.E.D.</p>
-        </div>
-        <div class="navbar-text pull-right">
-          <a href="#"<i class="fa fa-facebook-square fa-2x" style="color:#9d9d9d"></i></a>
-          <a href="#"<i class="fa fa-twitter fa-2x" style="color:#9d9d9d"></i></a>
-          <a href="#"<i class="fa fa-google-plus fa-2x" style="color:#9d9d9d"></i></a>
         </div>
       </div>
     </div>
