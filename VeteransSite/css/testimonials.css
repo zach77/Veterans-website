@@ -1,15 +1,39 @@
+/* spacing out content */
 body{
-    background-color: #16818E;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+ /* creating background image */
+.full {
+  background: url(https://pixabay.com/static/uploads/photo/2015/03/26/09/47/sky-690293_960_720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /* Changing profile img to be a circle */
-.jumbotron img{
-  height:100px;
-  width: 100px;
-  border-radius: 50%
+#profileImg{
+  height:150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+#badge{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid blue;
 }
 /* Making testimonial have space between other Testimonial's */
 .jumbotron{
   margin: 10px 0px;
+}
+
+#backgroundOpacity{
+    background-color:rgba(255,255,255, 1);
+    background:rgba(255,255,255, 0.8);
 }
 /* Making a scroller that only appears when the testimonial is long */
 .scroller{
